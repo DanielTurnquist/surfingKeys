@@ -2,18 +2,20 @@
 api.mapkey('<ctrl-y>', 'Show me the money', function() {
     Front.showPopup('a well-known phrase uttered by characters in the 1996 film Jerry Maguire (Escape to close).');
 });
-
+api.addSearchAlias('v', 'wiktionary', '"https://en.wiktionary.org/w/index.php?search=",', 's', '"https://en.wiktionary.org/w/api.php?action=query&format=json&generator=prefixsearch&gpssearch="', function(response) {
+    Object.values(JSON.parse(response.text).query.pages).map((p) => p.title)
+})
 // an example to replace `T` with `gt`, click `Default mappings` to see how `T` works.
-api.map('gt', 'T');
+    api.map('gt', 'T');
 //map H to go backward in history
-api.map('H', 'S');
+    api.map('H', 'S');
 //map L to go forward in history
-api.map('L', 'D');
+    api.map('L', 'D');
 // an example to remove mapkey `Ctrl-i`
-api.unmap('<ctrl-i>');
+    api.unmap('<ctrl-i>');
 
 // set theme
-settings.theme = `
+    settings.theme = `
 .sk_theme {
     font-family: Input Sans Condensed, Charcoal, sans-serif;
     font-size: 10pt;
@@ -54,39 +56,39 @@ settings.theme = `
 // ---- Hints ----
 // Hints have to be defined separately
 // Uncomment to enable
-settings.hintAlign = "left";
+    settings.hintAlign = "left";
 // Tomorrow-Night
-api.Hints.style('border: solid 2px #373B41; color:#00A4EF;background: initial; background-color: #1D1F21;font-family: Input Sans Condensed, Charcoal, sans-serif !important;"');
-api.Hints.style("border: solid 2px #373B41 !important; padding: 1px !important; color: #C5C8C6 !important; background: #1D1F21 !important;font-family: Input Sans Condensed, Charcoal, sans-serif !important;",
-"text");
-api.Visual.style('marks', 'background-color: #52C19699;');
-api.Visual.style('cursor', 'background-color: #81A2BE;');
+    api.Hints.style('border: solid 2px #373B41; color:#00A4EF;background: initial; background-color: #1D1F21;font-family: Input Sans Condensed, Charcoal, sans-serif !important;"');
+    api.Hints.style("border: solid 2px #373B41 !important; padding: 1px !important; color: #C5C8C6 !important; background: #1D1F21 !important;font-family: Input Sans Condensed, Charcoal, sans-serif !important;",
+        "text");
+    api.Visual.style('marks', 'background-color: #52C19699;');
+    api.Visual.style('cursor', 'background-color: #81A2BE;');
 
 // Nord
-/* -- DELETE LINE TO ENABLE THEME
-Hints.style('border: solid 2px #4C566A; color:#A3BE8C; background: initial; background-color: #3B4252;');
-Hints.style("border: solid 2px #4C566A !important; padding: 1px !important; color: #E5E9F0 !important; background: #3B4252 !important;", "text");
-Visual.style('marks', 'background-color: #A3BE8C99;');
-Visual.style('cursor', 'background-color: #88C0D0;');
--- DELETE LINE TO ENABLE THEME */
+    /* -- DELETE LINE TO ENABLE THEME
+    Hints.style('border: solid 2px #4C566A; color:#A3BE8C; background: initial; background-color: #3B4252;');
+    Hints.style("border: solid 2px #4C566A !important; padding: 1px !important; color: #E5E9F0 !important; background: #3B4252 !important;", "text");
+    Visual.style('marks', 'background-color: #A3BE8C99;');
+    Visual.style('cursor', 'background-color: #88C0D0;');
+    -- DELETE LINE TO ENABLE THEME */
 
 // Doom One
-/* -- DELETE LINE TO ENABLE THEME
-Hints.style('border: solid 2px #282C34; color:#98be65; background: initial; background-color: #2E3440;');
-Hints.style("border: solid 2px #282C34 !important; padding: 1px !important; color: #51AFEF !important; background: #2E3440 !important;", "text");
-Visual.style('marks', 'background-color: #98be6599;');
-Visual.style('cursor', 'background-color: #51AFEF;');
--- DELETE LINE TO ENABLE THEME */
+    /* -- DELETE LINE TO ENABLE THEME
+    Hints.style('border: solid 2px #282C34; color:#98be65; background: initial; background-color: #2E3440;');
+    Hints.style("border: solid 2px #282C34 !important; padding: 1px !important; color: #51AFEF !important; background: #2E3440 !important;", "text");
+    Visual.style('marks', 'background-color: #98be6599;');
+    Visual.style('cursor', 'background-color: #51AFEF;');
+    -- DELETE LINE TO ENABLE THEME */
 
 // Monokai
-/* -- DELETE LINE TO ENABLE THEME
-Hints.style('border: solid 2px #2D2E2E; color:#F92660; background: initial; background-color: #272822;');
-Hints.style("border: solid 2px #2D2E2E !important; padding: 1px !important; color: #A6E22E !important; background: #272822 !important;", "text");
-Visual.style('marks', 'background-color: #A6E22E99;');
-Visual.style('cursor', 'background-color: #F92660;');
--- DELETE LINE TO ENABLE THEME */
+    /* -- DELETE LINE TO ENABLE THEME
+    Hints.style('border: solid 2px #2D2E2E; color:#F92660; background: initial; background-color: #272822;');
+    Hints.style("border: solid 2px #2D2E2E !important; padding: 1px !important; color: #A6E22E !important; background: #272822 !important;", "text");
+    Visual.style('marks', 'background-color: #A6E22E99;');
+    Visual.style('cursor', 'background-color: #F92660;');
+    -- DELETE LINE TO ENABLE THEME */
 
-settings.theme = `
+    settings.theme = `
 /* Edit these variables for easy theme making */
 :root {
   /* Font */
@@ -237,7 +239,7 @@ input {
 .sk_theme#sk_omnibar {
   width: 100%;
   left: 0;
-} 
+}
 
 .sk_theme .title {
   color: var(--accent-fg);
