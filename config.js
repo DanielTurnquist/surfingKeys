@@ -13,6 +13,8 @@ api.addSearchAlias('v', 'wiktionary', '"https://en.wiktionary.org/w/index.php?se
     api.map('L', 'D');
 // an example to remove mapkey `Ctrl-i`
     api.unmap('<ctrl-i>');
+// reduce movement and repeated same finger usage
+    settings.hintCharacters = "fjdkslauriemvc";
 
 // set theme
     settings.theme = `
