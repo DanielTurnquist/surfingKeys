@@ -7,12 +7,8 @@ api.addSearchAlias('v', 'wiktionary', '"https://en.wiktionary.org/w/index.php?se
 })
 // an example to replace `T` with `gt`, click `Default mappings` to see how `T` works.
     api.map('gt', 'T');
-//map H to go backward in history
-    api.map('H', 'S');
-//map L to go forward in history
-    api.map('L', 'D');
 // an example to remove mapkey `Ctrl-i`
-    api.unmap('<ctrl-i>');
+//    api.unmap('<ctrl-i>');
 // reduce movement and repeated same finger usage
     settings.hintCharacters = "fjdkslauriemvc";
 
