@@ -13,54 +13,54 @@ api.addSearchAlias('v', 'wiktionary', '"https://en.wiktionary.org/w/index.php?se
     settings.hintCharacters = "fjdkslauriemvc";
 
 // set theme
-    settings.theme = `
-.sk_theme {
-    font-family: Input Sans Condensed, Charcoal, sans-serif;
-    font-size: 10pt;
-    background: #24272e;
-    color: #abb2bf;
-}
-.sk_theme tbody {
-    color: #fff;
-}
-.sk_theme input {
-    color: #d0d0d0;
-}
-.sk_theme .url {
-    color: #61afef;
-}
-.sk_theme .annotation {
-    color: #56b6c2;
-}
-.sk_theme .omnibar_highlight {
-    color: #528bff;
-}
-.sk_theme .omnibar_timestamp {
-    color: #e5c07b;
-}
-.sk_theme .omnibar_visitcount {
-    color: #98c379;
-}
-.sk_theme #sk_omnibarSearchResult ul li:nth-child(odd) {
-    background: #303030;
-}
-.sk_theme #sk_omnibarSearchResult ul li.focused {
-    background: #3e4452;
-}
-#sk_status, #sk_find {
-    font-size: 20pt;
-}`;
+    // settings.theme = `
+// .sk_theme {
+//     font-family: Input Sans Condensed, Charcoal, sans-serif;
+//     font-size: 10pt;
+//     background: #24272e;
+//     color: #abb2bf;
+// }
+// .sk_theme tbody {
+//     color: #fff;
+// }
+// .sk_theme input {
+//     color: #d0d0d0;
+// }
+// .sk_theme .url {
+//     color: #61afef;
+// }
+// .sk_theme .annotation {
+//     color: #56b6c2;
+// }
+// .sk_theme .omnibar_highlight {
+//     color: #528bff;
+// }
+// .sk_theme .omnibar_timestamp {
+//     color: #e5c07b;
+// }
+// .sk_theme .omnibar_visitcount {
+//     color: #98c379;
+// }
+// .sk_theme #sk_omnibarSearchResult ul li:nth-child(odd) {
+//     background: #303030;
+// }
+// .sk_theme #sk_omnibarSearchResult ul li.focused {
+//     background: #3e4452;
+// }
+// #sk_status, #sk_find {
+//     font-size: 20pt;
+// }`;
 // click `Save` button to make above settings to take effect.</ctrl-i></ctrl-y>
 // ---- Hints ----
 // Hints have to be defined separately
 // Uncomment to enable
-    settings.hintAlign = "left";
+    // settings.hintAlign = "left";
 // Tomorrow-Night
-    api.Hints.style('border: solid 2px #373B41; color:#00A4EF;background: initial; background-color: #1D1F21;font-family: Input Sans Condensed, Charcoal, sans-serif !important;"');
-    api.Hints.style("border: solid 2px #373B41 !important; padding: 1px !important; color: #C5C8C6 !important; background: #1D1F21 !important;font-family: Input Sans Condensed, Charcoal, sans-serif !important;",
-        "text");
-    api.Visual.style('marks', 'background-color: #52C19699;');
-    api.Visual.style('cursor', 'background-color: #81A2BE;');
+// api.Hints.style('border: solid 2px #373B41; color:#00A4EF;background: initial; background-color: #1D1F21;font-family: Input Sans Condensed, Charcoal, sans-serif !important;"');
+//     api.Hints.style("border: solid 2px #373B41 !important; padding: 1px !important; color: #C5C8C6 !important; background: #1D1F21 !important;font-family: Input Sans Condensed, Charcoal, sans-serif !important;",
+//         "text");
+//     api.Visual.style('marks', 'background-color: #52C19699;');
+//     api.Visual.style('cursor', 'background-color: #81A2BE;');
 
 // Nord
     /* -- DELETE LINE TO ENABLE THEME
