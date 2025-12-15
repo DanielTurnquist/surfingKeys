@@ -10,7 +10,7 @@ api.map('gt', 'T');
 settings.hintCharacters = "fjdkslauriemvc";
 settings.hintAlign = "left";
 
-// Set Roboto as the default font
+// Set Roboto font and JetBrains Darcula theme
 settings.theme = `
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
@@ -20,5 +20,64 @@ settings.theme = `
 
 .sk_theme {
     font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    background: #2b2b2b;
+    color: #a9b7c6;
+}
+
+.sk_theme tbody {
+    color: #a9b7c6;
+}
+
+.sk_theme input {
+    color: #a9b7c6;
+    background: #3c3f41;
+    border: 1px solid #555555;
+}
+
+.sk_theme .url {
+    color: #287bde;
+}
+
+.sk_theme .annotation {
+    color: #808080;
+}
+
+.sk_theme .omnibar_highlight {
+    color: #ffc66d;
+    background: #214283;
+}
+
+.sk_theme .omnibar_timestamp {
+    color: #6a8759;
+}
+
+.sk_theme .omnibar_visitcount {
+    color: #9876aa;
+}
+
+.sk_theme #sk_omnibarSearchResult ul li:nth-child(odd) {
+    background: #313335;
+}
+
+.sk_theme #sk_omnibarSearchResult ul li.focused {
+    background: #214283;
+    border: 1px solid #4b6eaf;
+}
+
+.sk_theme #sk_status, .sk_theme #sk_find {
+    font-size: 14px;
+    background: #3c3f41;
+    color: #a9b7c6;
+    border: 1px solid #555555;
+}
+
+.sk_theme #sk_keystroke {
+    background: #3c3f41;
+    color: #a9b7c6;
+}
+
+.sk_theme .expandRichHints span.annotation {
+    color: #cc7832;
 }
 `;
