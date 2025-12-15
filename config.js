@@ -10,6 +10,14 @@ api.map('gt', 'T');
 settings.hintCharacters = "fjdkslauriemvc";
 settings.hintAlign = "left";
 
+// Hint styling with Roboto and Darcula colors
+api.Hints.style('border: solid 2px #555555; color: #ffc66d; background: #2b2b2b; font-family: Roboto, sans-serif !important;');
+api.Hints.style('border: solid 2px #555555 !important; padding: 1px !important; color: #a9b7c6 !important; background: #2b2b2b !important; font-family: Roboto, sans-serif !important;', 'text');
+
+// Visual mode styling
+api.Visual.style('marks', 'background-color: #214283;');
+api.Visual.style('cursor', 'background-color: #287bde;');
+
 // Set Roboto font and JetBrains Darcula theme
 settings.theme = `
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
@@ -79,16 +87,5 @@ settings.theme = `
 
 .sk_theme .expandRichHints span.annotation {
     color: #cc7832;
-}
-
-/* Hint styling */
-#sk_hints .begin {
-    font-family: 'Roboto', sans-serif !important;
-    color: #ffc66d !important;
-}
-
-#sk_hints .end {
-    font-family: 'Roboto', sans-serif !important;
-    color: #a9b7c6 !important;
 }
 `;
