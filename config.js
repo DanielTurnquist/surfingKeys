@@ -54,7 +54,7 @@ api.addSearchAlias('v', 'wiktionary', '"https://en.wiktionary.org/w/index.php?se
 // ---- Hints ----
 // Hints have to be defined separately
 // Uncomment to enable
-    // settings.hintAlign = "left";
+    settings.hintAlign = "left";
 // Tomorrow-Night
 // api.Hints.style('border: solid 2px #373B41; color:#00A4EF;background: initial; background-color: #1D1F21;font-family: Input Sans Condensed, Charcoal, sans-serif !important;"');
 //     api.Hints.style("border: solid 2px #373B41 !important; padding: 1px !important; color: #C5C8C6 !important; background: #1D1F21 !important;font-family: Input Sans Condensed, Charcoal, sans-serif !important;",
