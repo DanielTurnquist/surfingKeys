@@ -80,4 +80,15 @@ settings.theme = `
 .sk_theme .expandRichHints span.annotation {
     color: #cc7832;
 }
+
+/* Hint styling */
+#sk_hints .begin {
+    font-family: 'Roboto', sans-serif !important;
+    color: #ffc66d !important;
+}
+
+#sk_hints .end {
+    font-family: 'Roboto', sans-serif !important;
+    color: #a9b7c6 !important;
+}
 `;
