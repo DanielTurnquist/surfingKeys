@@ -9,3 +9,16 @@ api.addSearchAlias('v', 'wiktionary', '"https://en.wiktionary.org/w/index.php?se
 api.map('gt', 'T');
 settings.hintCharacters = "fjdkslauriemvc";
 settings.hintAlign = "left";
+
+// Set Roboto as the default font
+settings.theme = `
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.sk_theme {
+    font-family: 'Roboto', sans-serif;
+}
+`;
